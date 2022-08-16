@@ -17,7 +17,7 @@ comment: false
 
 ```yaml
 - nickname: wlanxww
-  avatar: https://wlanxww.com/images/avatar.jpeg
+  avatar: https://gravatar.loli.net/avatar/b732cde19468a870365eab2d378cd819?s=100&d=identicon
   url: https://wlanxww.com
   description: wlanxww's blog
 ```
