@@ -21,3 +21,4 @@ comment: false
   url: https://wlanxww.com
   description: wlanxww's blog
 ```
+如需加入友链，请按照上述规则提交pr
