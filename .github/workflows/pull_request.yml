@@ -25,7 +25,6 @@ defaults:
 jobs:
   # Build job
   build:
-    environment: pre-github-pages
     runs-on: ubuntu-20.04
     env:
       HUGO_VERSION: 0.101.0
@@ -50,3 +49,13 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
+
+  # Deployment job
+  deploy:
+    environment: pre-github-pages
+    runs-on: ubuntu-20.04
+    needs: build
+    steps:
+      - name: Show Built Files
+        run: |
+          ls ./public
